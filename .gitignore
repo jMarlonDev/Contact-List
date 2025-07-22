@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+*/node_modules/
+
+# Entornos
+.env
+*.env
+
+# IDE/Editor
+.vscode/
+
+# Builds
+dist/
+build/
+*/dist/
+*/build/
+
+# MongoDB
+data/db/
