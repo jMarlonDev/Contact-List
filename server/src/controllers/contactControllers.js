@@ -1,7 +1,7 @@
 // Modelo de las propiedades de cada contacto
 import modelContact from "../models/modelContact";
 
-const createContact = async (request , response) => {
+export const createContact = async (request , response) => {
   try {
     const contact = new modelContact(request.body);
     await contact.save();
@@ -12,5 +12,3 @@ const createContact = async (request , response) => {
     })
   }
 }
-
-export default { createContact }
