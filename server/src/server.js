@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import 'dotenv/config'; // Carga las variables de entorno
 import connectDB from "./config/dbContacts.js";
+import contactRoutes from "./routes/contactRouter.js"
 
 // App 
 const app = express();
@@ -12,7 +13,7 @@ app.use(cors())
 //Conexión a la base de datos de mongoDB
 connectDB()
 
-
+app.use("/contacts",contactRoutes)
 // Puerto definido desde la variable de entorno
 const PORT = process.env.PORT;
 
