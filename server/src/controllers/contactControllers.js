@@ -46,7 +46,7 @@ export const oneContact = async (request , response) => {
 
 export const updateContact = async (request, response) => {
   try {
-    const id = request.params;
+    const { id } = request.params;
     const body = request.body
     const contactUpdate = await modelContact.findByIdAndUpdate(id , body , {new: true, runValidators: true})
 
