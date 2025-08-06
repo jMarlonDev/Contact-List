@@ -1,5 +1,5 @@
 // Modelo de las propiedades de cada contacto
-import modelContact from "../models/modelContact";
+import modelContact from "../models/modelContact.js";
 
 export const createContact = async (request , response) => {
   try {
