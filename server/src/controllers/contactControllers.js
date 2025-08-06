@@ -31,7 +31,7 @@ export const allContacts = async (request , response) => {
 /** Obtener un solo contacto de la base de datos mediante el parámetro del Id */
 export const oneContact = async (request , response) => {
   try {
-    const { id } = req.params;
+    const { id } = request.params;
     const contact = await modelContact.findById(id)
 
     if (!contact) {
