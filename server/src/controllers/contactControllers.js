@@ -13,8 +13,6 @@ export const createContact = async (request , response) => {
     })
   }
 }
-<<<<<<< HEAD
-=======
 
 /** 
  * Obtener todos los contactos creados de manera ordenada mostrando 
@@ -77,4 +75,3 @@ export const deleteContact = async (request , response) => {
      response.status(500).json({error: error.message})
   }
 }
->>>>>>> feature/contact-controllers
